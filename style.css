@@ -1,0 +1,133 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 20px;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-info h1 {
+  font-size: 36px;
+  color: #007bff;
+  margin: 0;
+}
+
+.profile-info h2 {
+  font-size: 20px;
+  color: #555;
+  margin: 5px 0 0;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #007bff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cv-section {
+  background-color: #f9f9f9;
+  border: 3px solid #eeeeee;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.cv-section:hover {
+  transform: scale(1.02);
+  border-color: #007bff;
+}
+
+.cv-section h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 5px;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.print-button {
+  display: block;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    margin-top: 20px;
+  }
+
+  .profile-info h1 {
+    font-size: 28px;
+  }
+
+  .profile-info h2 {
+    font-size: 18px;
+  }
+
+  .cv-section iframe {
+    height: 200px;
+  }
+}

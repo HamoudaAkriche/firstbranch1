@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Halleb Youssef</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function imprimerCV() {
+        window.print();
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="profile-section">
+          <div class="profile-info">
+            <h1>Halleb Youssef</h1>
+            <h2>Étudiant Ingénieur Génie Télécommunications</h2>
+          </div>
+          <div class="profile-photo">
+            <img src="photo.jpg" alt="Photo de Youssef" />
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="cv-section">
+          <h3>Formation Académique</h3>
+          <iframe src="formation.html"></iframe>
+        </section>
+
+        <section class="cv-section">
+          <h3>Compétences Techniques</h3>
+          <iframe src="competences.html"></iframe>
+        </section>
+
+        <section class="cv-section">
+          <h3>Vie Associative & Passions</h3>
+          <iframe src="projects.html"></iframe>
+        </section>
+
+        <section class="cv-section">
+          <h3>Contact</h3>
+          <iframe src="contact.html"></iframe>
+        </section>
+      </main>
+
+      <footer>
+        <button onclick="imprimerCV()" class="print-button">
+          Imprimer le CV
+        </button>
+      </footer>
+    </div>
+  </body>
+</html>
